@@ -19,7 +19,8 @@ func main() {
 		`data payload. ex. {"message":"Hello World!"}`)
 
 	if len(os.Args) == 1 {
-		fmt.Println("require arguments\n")
+		fmt.Println("require arguments")
+		fmt.Println()
 		flag.PrintDefaults()
 		os.Exit(1)
 	}
