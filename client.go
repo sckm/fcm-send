@@ -14,7 +14,7 @@ import (
 const GcmURL string = "https://gcm-http.googleapis.com/gcm/send"
 
 // FcmURL url for FCM
-const FcmURL string = "https://gcm-http.googleapis.com/gcm/send"
+const FcmURL string = "https://fcm.googleapis.com/fcm/send"
 
 func sendData(serverKey string, data string, to string) error {
 	jsonBytes, err := createPayload(data, to)
